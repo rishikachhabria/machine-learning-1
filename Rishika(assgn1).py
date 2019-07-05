@@ -88,11 +88,6 @@ Final_Test['rating']=Final_Test['Rating'].str.slice(stop=-1).astype(int)
 Final_Train['Rating'].fillna('0%',inplace=True)
 Final_Train['rating']=Final_Train['Rating'].str.slice(stop=-1).astype(int)
 
-           
-
-"""Final_Test.drop("Miscellaneous_Info",axis=1,inplace=True)
-Final_Train.drop("Miscellaneous_Info",axis=1,inplace=True)"""
-
 x_train=Final_Train.iloc[:,7:].values
 y_train =Final_Train.iloc[:,5].values
   
